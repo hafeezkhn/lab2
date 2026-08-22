@@ -1,0 +1,1 @@
+savedcmd_/workspaces/Linux/04_Linux_Device_Driver/002_charDD/1_chardriver/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /workspaces/Linux/04_Linux_Device_Driver/002_charDD/1_chardriver/Module.symvers -T /workspaces/Linux/04_Linux_Device_Driver/002_charDD/1_chardriver/modules.order -i Module.symvers -e 

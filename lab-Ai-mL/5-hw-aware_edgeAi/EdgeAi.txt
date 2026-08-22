@@ -1,0 +1,201 @@
+d# lab-Ai-mL-
+
+
+Heterogeneous SoC Foundations
+## Topics
+- CPU vs GPU vs NPU architecture
+- AXI / AMBA interconnect
+- Cache coherency (ACE / CHI)
+- DMA engines
+- IOMMU / SMMU
+- Shared memory systems
+- Zero-copy buffers
+- Memory bandwidth analysis
+
+## Tools / Platforms
+- ARM SoCs
+- NVIDIA Jetson
+- Qualcomm Snapdragon
+- NXP i.MX8
+- TI Jacinto
+- perf / ftrace
+
+## What
+Understanding how compute units communicate and share memory.
+
+## Why
+AI workloads require efficient data movement between CPU, GPU, and NPU.
+
+---
+
+GPU & Accelerator Programming
+## Topics
+- CUDA basics (threads, warps, blocks)
+- OpenCL kernels
+- GPU memory hierarchy
+- Kernel dispatch model
+- Command queues
+- Synchronization
+- PCIe / USB accelerators
+- Runtime delegates
+- CPU fallback mechanisms
+
+## Tools
+- CUDA Toolkit
+- Nsight Systems
+- OpenCL SDK
+- TensorRT
+- Vendor SDKs (SNPE, TIDL, eIQ)
+
+## What
+Offloading compute-intensive AI tasks to accelerators.
+
+## Why
+CPU alone cannot meet real-time AI inference constraints.
+
+---
+
+AI Runtime & Inference Engines
+## Topics
+- TensorFlow Lite internals
+- Delegate mechanism
+- ONNX Runtime execution providers
+- Graph partitioning
+- Static memory planning
+- Operator fusion
+- Backend selection (CPU/GPU/NPU)
+
+## Tools
+- TensorFlow Lite
+- ONNX Runtime
+- ARM NN
+- TensorRT
+- MLIR
+
+## What
+How ML models execute on embedded Linux systems.
+
+## Why
+Understanding runtime enables optimization and custom delegate development.
+
+---
+
+Compiler & Graph Lowering
+## Topics
+- MLIR fundamentals
+- Graph lowering
+- Backend-aware compilation
+- TVM auto-scheduling
+- XLA basics
+- Static tensor memory planning
+
+## Tools
+- MLIR
+- TVM
+- XLA
+- LLVM
+
+## What
+Transforming models into hardware-executable kernels.
+
+## Why
+Optimization happens at compile-time before inference.
+
+---
+
+Edge Model Optimization
+## Topics
+- FP32 vs FP16
+- INT8 quantization
+- QAT vs PTQ
+- Pruning
+- Knowledge distillation
+- Structured sparsity
+- Model benchmarking
+
+## Tools
+- TensorFlow Model Optimization Toolkit
+- ONNX Quantization Tools
+- TensorRT INT8 Calibration
+- Benchmark scripts
+
+## What
+Reducing model size and compute requirements.
+
+## Why
+Embedded devices have limited RAM, power, and thermal budgets.
+
+---
+
+TinyML & MCU AI
+## Topics
+- TensorFlow Lite Micro
+- Static tensor arena
+- CMSIS-NN
+- RTOS integration
+- Sub-1MB deployment
+- Power-aware inference scheduling
+
+## Tools
+- TFLite Micro
+- Zephyr
+- FreeRTOS
+- ARM CMSIS-NN
+
+## What
+Running inference on microcontrollers.
+
+## Why
+Ultra-low-power edge AI applications.
+
+---
+
+Secure AI & Deployment
+## Topics
+- Secure boot with AI workloads
+- Encrypted model storage
+- OTA model updates
+- Model versioning
+- Drift detection
+- Telemetry feedback loops
+- A/B testing
+
+## Tools
+- OpenSSL
+- TPM
+- Mender / SWUpdate
+- Cloud IoT platforms
+
+## What
+Production-grade AI lifecycle management.
+
+## Why
+AI models are assets and must be secured and maintainable.
+
+---
+
+Production AI System Design
+## Topics
+- Sensor → Preprocess → Inference → Postprocess pipeline
+- Buffer lifecycle management
+- Asynchronous inference
+- Real-time scheduling
+- Multi-accelerator workload balancing
+- Deadline-aware inference
+- Watchdog integration
+
+## Tools
+- GStreamer
+- V4L2
+- DMA-BUF
+- ROS2
+- perf / trace-cmd
+
+## What
+End-to-end AI system architecture.
+
+## Why
+Performance, determinism, and reliability define production systems.
+
+---
+

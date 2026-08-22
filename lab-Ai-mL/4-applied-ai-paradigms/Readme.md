@@ -1,0 +1,17 @@
+## Generative AI vs. Agentic AI: Comprehensive Comparison
+
+| Aspect | Generative AI | Agentic AI |
+| :--- | :--- | :--- |
+| **Primary Purpose & Goal** | Generates content (text, code, images, audio, video) in response to a user prompt. | Achieves complex, multi-step goals by planning, executing actions, and adapting autonomously. |
+| **Execution Model** | **Linear / Reactive:** Request-Response pattern (**Prompt → Inference → Response**). | **Cyclical / Proactive:** Iterative decision loop (**Observe → Reason → Plan → Act → Evaluate → Repeat**). |
+| **Autonomy & Decision Making** | Waits for human instructions; generates output based solely on the current prompt. | Decomposes goals into subtasks, prioritizes work, executes steps, and continues with minimal supervision. |
+| **Environment & Tool Access** | **Isolated:** Read-only access relying on training data, uploaded files, or static RAG context. | **Interactive:** Autonomous read/write access to web browsers, databases, APIs, shell environments, and enterprise software. |
+| **Memory & State Management** | **Stateless:** Context is constrained to the active chat session window; persistent state is external/optional. | **Stateful:** Maintains active working memory for current task progress and persistent long-term memory across sessions. |
+| **Error Handling & Resilience** | **Passive:** Outputs errors or hallucinations; relies on human debugging and re-prompting. | **Active / Self-Correction:** Reads error logs, analyzes failures, revises execution plans, and retries automatically. |
+| **Architecture & Infrastructure** | Foundation models (LLMs, VLMs, Diffusion) paired with prompt engineering, embeddings, and vector databases. | Foundation models wrapped with planning engines, orchestration layers, memory stores, tool interfaces, and single/multi-agent setups. |
+| **Technology Stack** | OpenAI API, Claude API, Gemini, LangChain, LlamaIndex, Pinecone, Weaviate, RAG pipelines. | LangGraph, CrewAI, Microsoft AutoGen, OpenAI Agents SDK, Model Context Protocol (MCP), browser automation tools. |
+| **Human Involvement** | **High:** Requires continuous step-by-step prompting, guidance, and validation. | **Low:** Humans define high-level goals, guardrails, and approvals; the agent manages intermediate execution. |
+| **Success Metrics** | Quality, fluency, accuracy, relevance, and creativity of generated content. | Task completion rate, execution efficiency, reliability, safety, and correct resource utilization. |
+| **Typical Use Cases** | Drafting documents, writing code snippets, content summarization, image generation, language translation, brainstorming. | Autonomous software development, AI research assistants, automated DevOps pipelines, customer support resolution, workflow orchestration. |
+| **Representative Examples** | ChatGPT, Claude, Gemini, GitHub Copilot, Midjourney, DALL·E. | OpenAI Codex Agents, Devin, Manus AI, LangGraph-based custom agents, AutoGen applications. |
+| **Shared Foundation** | *Both rely on Large Language Models (LLMs) and natural language understanding as their foundational intelligence layer.* | *Uses the underlying LLM as a core reasoning engine to interpret goals and decide actions.* |

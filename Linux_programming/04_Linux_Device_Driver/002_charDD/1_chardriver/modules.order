@@ -1,0 +1,1 @@
+/workspaces/Linux/04_Linux_Device_Driver/002_charDD/1_chardriver/char_driver.o
