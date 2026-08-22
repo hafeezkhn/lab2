@@ -116,3 +116,25 @@ ps aux|gerp firef
 cd /proc/<PID>/fd
 ```
 
+### systemd
+- Systemd is started automatically while booting 
+- when entering a minimal troubleshooting mode with the boot argument rd.break, an initramfs init process is loaded and there will be no systemd.
+- when entering a minimal troubleshooting mode with GRUB2 boot arguments init=/bin/bash , a bash shell is loaded as the init process.
+- to start systemd in this case, use the command exec /usr/lib/systemd/systemd to replace the current program with systemd.
+
+```bash
+# manually loading systemd
+reboot
+#add rd.break on grub boot prompt
+#after booting in the rescue env,use 
+ps aux 
+# and confirm that init is listed as PID 1
+exit
+#this will exit the rescue shell and resume normal booting, where init is linked to /usr/lib/systemd/systemd
+reboot
+#add init=/bin/bash to the grub boot prompt
+ps aux # to confirm bash loaded as PID 1
+#try to start /usr/lib/systemd/systemd : it fails
+# use 
+exec /usr/lib/systemd/systemd # to replace the current PID 1 without using fork()
+```
