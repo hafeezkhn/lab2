@@ -62,7 +62,7 @@
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mohammed-hafeezkhn&bg_color=0D1117&color=00599C&line=0476B5&point=FFFFFF&hide_border=true&theme=react" alt="Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hafeezkhn&bg_color=0D1117&color=00599C&line=0476B5&point=FFFFFF&hide_border=true&theme=react" alt="Activity Graph" />
 </div>
 
 ---
