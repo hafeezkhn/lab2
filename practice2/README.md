@@ -7,31 +7,31 @@
 ---
 
 <div align="center">
-  <a href="https://github.com/mohammed-hafeezkhn/programming_c" target="_blank">
+  <a href="https://github.com/hafeezkhn/lab2/tree/master/programming_c" target="_blank">
     <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C" />
   </a>
-  <a href="https://github.com/mohammed-hafeezkhn/practice2/tree/main/cpp_prog" target="_blank">
+  <a href="https://github.com/hafeezkhn/lab2/tree/master/practice2/cpp_prog" target="_blank">
     <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
   </a>
-  <a href="https://github.com/mohammed-hafeezkhn/-lab-Ai-mL/tree/main/0-python_intro" target="_blank">
+  <a href="https://github.com/hafeezkhn/lab2/tree/master/lab-Ai-mL/0-python_intro" target="_blank">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
   </a>
-  <a href="https://github.com/mohammed-hafeezkhn/Linux/tree/main/03_Kernel_Internals" target="_blank">
+  <a href="https://github.com/hafeezkhn/lab2/tree/master/Linux_programming/03_Kernel_Internals" target="_blank">
     <img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white" alt="Linux" />
   </a>
-  <a href="https://github.com/mohammed-hafeezkhn/Linux/tree/main/embedded_linux/raspberryPi" target="_blank">
+  <a href="https://github.com/hafeezkhn/lab2/tree/master/Linux_programming/embedded_linux/raspberryPi" target="_blank">
     <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="Raspberry Pi" />
   </a>
-  <a href="https://github.com/mohammed-hafeezkhn/ucontroller" target="_blank">
+  <a href="https://github.com/hafeezkhn/ucontroller" target="_blank">
     <img src="https://img.shields.io/badge/Microcontrollers-4B0082?style=for-the-badge" alt="Microcontrollers" />
   </a>
-  <a href="https://github.com/mohammed-hafeezkhn/Linux/blob/main/embedded_linux/raspberryPi/aarch64_001.md" target="_blank">
+  <a href="https://github.com/hafeezkhn/lab2/blob/master/Linux_programming/embedded_linux/raspberryPi/Readme_aarch.md" target="_blank">
     <img src="https://img.shields.io/badge/Processor_HPC-FF4500?style=for-the-badge&logo=arm&logoColor=white" alt="Processor HPC" />
   </a>
-  <a href="https://github.com/mohammed-hafeezkhn/practice2/tree/main/swarch" target="_blank">
+  <a href="https://github.com/hafeezkhn/lab2/tree/master/practice2/swarch" target="_blank">
     <img src="https://img.shields.io/badge/Architecture-8A2BE2?style=for-the-badge" alt="Architecture" />
   </a>
-  <a href="https://github.com/mohammed-hafeezkhn/practice2/tree/main/network" target="_blank">
+  <a href="https://github.com/hafeezkhn/lab2/tree/master/practice2/network" target="_blank">
     <img src="https://img.shields.io/badge/Network-0476B5?style=for-the-badge" alt="Network" />
   </a>
   <a href="https://www.docker.com/" target="_blank">
