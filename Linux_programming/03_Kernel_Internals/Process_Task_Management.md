@@ -663,3 +663,27 @@ alone monopolizes the system, despite possibly sharing the processor among hundr
 - Virtual memory lets the process allocate and manage memory as if it alone owned all the memory in the system (<a href="Memory_Management.md"><kbd>&emsp;Memory Management&emsp;</kbd></a> 
 <br><br>)
 
+
+--- 
+> Q. What Are Cgroups?
+- A cgroup is a collection of processes that are bound together and associated with specific resource limits or parameters, such as CPU, memory, disk I/O, and network bandwidth
+
+- relavent Parameters Cgroup v1
+   - CPUAccounting,CPUQouta,CPUShares
+   - MemoryAccounting,MemoryLimit
+   - TaskAccounting,TaskMax
+   - BlockIOAccounting, BlockIOWeight, BlockIODeviceWeight
+- Relavent parameters in Cgroup v2
+   - CPUWeight
+   - MemoryMax
+   - IO* instead of BlockIO*
+
+```bash
+systemctl set-property --runtime httpd CPUShares=2048
+systemctl set-property httpd CPUSHares=2048
+# or put it in unit\
+#[service]
+#CPUShare=2048
+systemd-cgls #cgtop
+
+``` 

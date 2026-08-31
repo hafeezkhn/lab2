@@ -113,4 +113,25 @@ When the cr3 control register of a CPU is modified, the hardware automatically
 invalidates all entries of the local TLB, because a new set of page tables is in use and
 the TLBs are pointing to old data.
 
+---
+- virtual memory 
+  - virtual memory as the total addressable memory that is provided by the cpu architecture that is used
+  - virtual memory as the sum of ram and swap
+
+
+- When a process loads, it creates a virtual address space.
+•
+This virtual address space contains virtual memory offsets that are private to the process.
+When the process requests physical memory access, the kernel maps the physical address of a memory page to the virtual address in the virtual memory address space used by that process.
+•
+The size of the available virtual address space is defined by the CPU architecture.
+
+- Theoretically, a 64-bits CPU can address 2(64) bits of memory which corresponds to 16EiB
+•
+The address sizes in /proc/cpuinfo define how many bits can be used for addressing virtual memory on this specific CPU architecture.
+•
+You may find a value of 45 bits physical and 48 bits virtual, meaning that this specific CPU can address 256TiB of virtual memory and 64TiB of physical memory.
+The VmallocTotal parameter in /proc/meminfo indicates the total amount of virtual memory that can be used.
+
 ### Virtual Process memory:
+
