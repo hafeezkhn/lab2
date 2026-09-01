@@ -10,7 +10,7 @@
   <a href="https://github.com/hafeezkhn/lab2/tree/master/programming_c" target="_blank">
     <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C" />
   </a>
-  <a href="https://github.com/hafeezkhn/lab2/tree/master/practice2/cpp_prog" target="_blank">
+  <a href="https://github.com/hafeezkhn/lab2/tree/master/c%2B%2B" target="_blank">
     <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
   </a>
   <a href="https://github.com/hafeezkhn/lab2/tree/master/lab-Ai-mL/0-python_intro" target="_blank">
@@ -58,11 +58,14 @@
 </div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=mohammed-hafeezkhn&style=for-the-badge&color=00599C" alt="Profile Views" />
+  <!-- Changed username to hafeezkhn -->
+  <img src="https://komarev.com/ghpvc/?username=hafeezkhn&style=for-the-badge&color=00599C" alt="Profile Views" />
 </div>
+<br>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hafeezkhn&bg_color=0D1117&color=00599C&line=0476B5&point=FFFFFF&hide_border=true&theme=react" alt="Activity Graph" />
+  <!-- Added &v=1 to the end to bypass GitHub's image cache -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hafeezkhn&bg_color=0D1117&color=00599C&line=0476B5&point=FFFFFF&hide_border=true&theme=react&v=1" alt="Activity Graph" />
 </div>
 
 ---
