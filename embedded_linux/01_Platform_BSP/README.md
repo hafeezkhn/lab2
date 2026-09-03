@@ -85,3 +85,153 @@ Hardware Initialization Code: Scripts and configurations that set up the process
 Device Drivers: The custom software required to control the specific chips soldered onto the board (e.g., the specific Bluetooth chip, audio codec, or touch-screen controller).  
 
 Configuration Files: Memory maps and hardware descriptions (like a Device Tree) that give the OS a physical layout of the board.  
+
+### Device Tree & BSP
+> Device Tree <br>
+● Device Tree concepts
+● .dts
+● .dtsi
+● .dtb
+● dtc
+● Device Tree compiler
+● Nodes
+● Properties
+● compatible
+● reg
+● interrupts
+● clocks
+● resets
+● pinctrl
+● gpio
+● dma
+● status
+
+> Device Tree Debugging<br>
+● /proc/device-tree
+● /sys/firmware/devicetree
+● DT overlays
+● DT binding
+● YAML bindings
+● Debugging incorrect DT configuration
+
+> BSP<br>
+● BSP architecture
+● Board support package
+● SoC SDK
+● Board configuration
+● Kernel configuration
+● Device Tree
+● Bootloader
+● Root filesystem
+● Drivers
+● Firmware
+● Board bring-up
+
+> Bootloader & Board Bring-Up
+    Boot Flow
+Power ON
+ ↓
+BootROM
+ ↓
+FSBL
+ ↓
+DDR Initialization
+ ↓
+SSBL / U-Boot
+ ↓
+Device Tree
+ ↓
+Linux Kernel
+ ↓
+Root Filesystem
+ ↓
+Init/Systemd
+ ↓
+Applications
+Learn:
+
+> BootROM<br>
+● Boot sources
+● Boot straps
+● Secure boot
+● Image authentication
+
+> FSBL<br>
+● CPU initialization
+● DDR initialization
+● Clock initialization
+● Pinmux
+● Peripheral initialization
+
+> U-Boot<br>
+● Board initialization
+● DRAM initialization
+● Relocation
+● Environment
+● Boot commands
+● Boot scripts
+● Device Tree
+● Kernel loading
+● Root filesystem
+● TFTP
+● USB boot
+● Network boot
+● Flashing
+● Custom board support
+
+>### Board Bring-Up<br>
+> Hardware<br>
+● Power rails
+● PMIC
+● Clocks
+● PLL
+● Reset
+● GPIO
+● DDR
+● UART
+● Ethernet
+● USB
+● PCIe
+● UFS
+● I2C
+● SPI
+
+> Software<br>
+● BootROM
+● Bootloader
+● DDR initialization
+● Kernel
+● Device Tree
+● Root filesystem
+● Drivers
+● Applications
+
+> Debugging<br>
+● No boot
+● Bootloader crash
+● Kernel panic
+● Driver probe failure
+● Device timeout
+● DMA fault
+● IOMMU fault
+● Power failure
+● Clock failure
+● Storage failure
+
+> Power Management<br>
+● PMIC
+● Power domains
+● Clock gating
+● Power gating
+● Runtime PM
+● System suspend
+● Resume
+● Wakeup sources
+● Device suspend/resume
+● CPU idle
+● CPU frequency scaling
+● DVFS
+● Thermal management
+● S0ix concepts
+● Low-power states
+● Peripheral wake-up

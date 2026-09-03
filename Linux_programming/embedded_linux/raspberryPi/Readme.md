@@ -192,3 +192,68 @@
 <p align="right">
   ➡️ <a href="Readme_aarch.md" style="color: #2e6c80;">Next: Armv8-A Fundamentals</a></br>
 </p>
+
+
+> ARM Security<br>
+● ARM TrustZone
+● Secure world
+● Normal world
+● Secure Monitor
+● EL3
+● Secure boot
+● Chain of trust
+● Key management
+● Secure storage
+
+> Trusted Firmware<br>
+● TF-A
+● BL31
+● Secure monitor
+● OP-TEE
+● Trusted applications
+● Secure execution environment
+
+> Linux Security<br>
+● Kernel security
+● Access control
+● SELinux concepts
+● Secure boot
+● Measured boot
+● Firmware authentication
+● Memory protection
+
+> Virtualization & Hypervisors<br>
+● Virtual machines
+● Hypervisor
+● Type-1 hypervisor
+● Type-2 hypervisor
+● Virtual CPU
+● Virtual memory
+● Virtual interrupts
+● Virtual MMIO
+● Device virtualization
+● IOMMU/SMMU
+
+> ARM Virtualization<br>
+● ARM EL2
+● Stage-1 translation
+● Stage-2 translation
+● Virtual GIC
+● Virtual timers
+● Virtual devices
+
+
+> RISC-V ISA<br>
+● Registers
+● Privilege modes
+● Machine mode
+● Supervisor mode
+● Virtual memory
+● Interrupts
+● Exceptions
+● PMP
+● MMU
+● Device Tree
+● RISC-V Linux
+● QEMU RISC-V
+
