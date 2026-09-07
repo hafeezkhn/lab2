@@ -1,1 +1,2 @@
-# -lab-Ai-mL
+
+`Artificial Intelligence (AI)` is the broad discipline of creating systems that can mimic human cognitive abilities such as reasoning, problem-solving, perception, and language understanding. It encompasses multiple subfields, including `machine learning (ML)`, deep learning, robotics, and natural language processing. AI systems can work with structured, semi-structured, and unstructured data, using logic, decision trees, and other techniques to make decisions and self-correct.
