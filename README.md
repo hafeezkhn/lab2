@@ -1,6 +1,16 @@
 <div align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:00599C,100:0476B5&height=150&section=header&text=%20&fontSize=40&fontColor=ffffff&animation=twinkling"
+    width="100%"
+    alt="Animated Header"
+  />
+</div>
+
+
+
+<div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=00599C&center=true&vCenter=true&width=400&lines=TECH+STACK;LANGUAGES+%26+TOOLS;COMPETITIVE+PROGRAMMING" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=00599C&center=true&vCenter=true&width=400&lines=TECH+STACK;LANGUAGES+%26+TOOLS;+PROGRAMMING" alt="Typing SVG" />
   </a>
 </div>
 
@@ -62,10 +72,5 @@
   <img src="https://komarev.com/ghpvc/?username=hafeezkhn&style=for-the-badge&color=00599C" alt="Profile Views" />
 </div>
 <br>
-
-<div align="center">
-  <!-- Added &v=1 to the end to bypass GitHub's image cache -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hafeezkhn&bg_color=0D1117&color=00599C&line=0476B5&point=FFFFFF&hide_border=true&theme=react&v=1" alt="Activity Graph" />
-</div>
 
 ---
