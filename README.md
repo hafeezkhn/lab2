@@ -70,8 +70,9 @@
 [![Credly Badges](https://img.shields.io/badge/Credly-View_Badges-F96914?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/hafiz-khan.77cb0e7d/badges/credly)
 [![The Linux Foundation](https://img.shields.io/badge/Linux_Foundation-Certificate-003559?style=for-the-badge&logo=linuxfoundation&logoColor=white)](https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/bb34e3c5-b509-4598-b952-7072f1e71a1e-hafiz-khan-fc4f80d4-c584-477b-a498-e2c8f30700f1-certificate.pdf)
 
-[![GitHub Copilot](https://img.shields.io/badge/Copilot-0078D4?style=for-the-badge&logo=githubcopilot&logoColor=white)](./.hidden_folder/github_vscode_agentic.png)
-[![Claude Agentic](https://img.shields.io/badge/Claude_Agentic-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](./.hidden_folder/claude_agentic.png)
+[![GitHub Copilot](https://img.shields.io/badge/Copilot-0078D4?style=for-the-badge&logo=githubcopilot&logoColor=white)](./practice2/zmisc/.hidden_folder/github_vscode_agentic.png)
+[![Claude Agentic](https://img.shields.io/badge/Claude_Agentic-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](./practice2/zmisc/.hidden_folder/claude_agentic.png)
+
 
 
 <div align="center">
