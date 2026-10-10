@@ -102,7 +102,7 @@ In Embedded AI, pure accuracy is not the only goal. Success requires balancing m
 
 ## 💻 Example Project: STM32 Temperature Classifier
 
-A baseline entry-level GitHub project demonstrating the complete edge-inference concept on an MCU (using TensorFlow Lite, STM32CubeMX, and X-CUBE-AI):
+A baseline entry-level project demonstrating the complete edge-inference concept on an MCU (using TensorFlow Lite, STM32CubeMX, and X-CUBE-AI):
 
 ```text
 LM35 Sensor ──> ADC ──> STM32 ──> AI Inference ──> [COLD / NORMAL / HOT] ──> LCD
@@ -113,15 +113,13 @@ LM35 Sensor ──> ADC ──> STM32 ──> AI Inference ──> [COLD / NORMA
 
 ---
 
-## 🛤️ Career Pathway: The Systems Engineer's Role
 
-Embedded AI is not about abandoning a systems background to learn pure ML. It sits at a highly specialized intersection:
 
-**Embedded C/C++ + SoC/MCU + Linux/RTOS + Drivers + AI Accelerators + Model Optimization + Inference**
+**The Big Picture:**
 
-### The Big Picture: AI Ecosystem Stack
+- Embedded C/C++ + SoC/MCU + Linux/RTOS + Drivers + AI Accelerators + Model Optimization + Inference
 
-Your expertise can be organized into three major areas, mapping a natural career progression from edge to infrastructure:
+- AI Ecosystem Stack
 
 ```text
                          AI
@@ -139,8 +137,6 @@ Your expertise can be organized into three major areas, mapping a natural career
        RTOS/Linux       APIs            AI workloads
 
 ```
-
-**The Path Forward:**
 
 1. **Level 1 (TinyML):** STM32 / MCU
 2. **Level 2 (Embedded Linux):** ARM Cortex-A
