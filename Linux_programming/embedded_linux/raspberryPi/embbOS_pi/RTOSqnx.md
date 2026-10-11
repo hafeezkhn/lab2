@@ -1,5 +1,4 @@
 
-<a href="https://github.com/mohammed-hafeezkhn/ucontroller/blob/main/RealTimeOS/other/NeutrinoRTOS.md"><kbd>⬅ Back</kbd></a>
 
 ## [Neutrino_Architecture](#neutrino_architecture)
 * QNX Neutrino delivers a standards based
