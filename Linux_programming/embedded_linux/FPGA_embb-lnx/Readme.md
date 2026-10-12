@@ -99,10 +99,59 @@
 - Design goal:safe and simple interfaces for users
 
 
-    
+>> Privileged operations
+- Access MMIO
+- Configure inturrupts
+- control DMA/IOMMU
+- Manage page table
+- Power management
+
+>> Note: power mgmt ,sleep mode CPU tells all the peripherls to kind of suspend themself going to mode that can recover from it , basically all the devices to ultra low power mode 
+
+### Virtual Memory 
+- Why
+    - per process;stable view;connot see physical
+    - processes should be isolated from each other, one process should not read or right the data corresponding to another process
+    - multi- tasking, Security:if someone uses pointer and someone else should not be able to guess what physical memory that pointer it corresponds to (every pointer i use should be given a fake name ,and also OS will block access to portion of memory)
+    - virtualization happens at runtime
+- How 
+    - Each process sees a virtual memory space - addresses that are different from other processes
+    - OS Kernel translates virtual --> physical and back
+
+- Each process sees its own virtual address space
+- page tables translate virtual --> physical frames
+- MMIO regions live in physical address space (not directly visible to apps)
+
+```text
+
+peripheral
+physical:0x4000_0000
+size:4KB
+    |ioremap
+    |
+Kernel virtual Addr
+void __iomem *base = ioremap(0x4000_0000X1000);
+write(EN,base+CTRL_OFF);
+u32 st = read(base+STATUS_OFF);
+    |syscalls
+    |
+user Space
+open("\dev\..")
+read/write/octl
+sysfs:/sys/class/
+
+```
 
 
-     
+### Linux Device Model
+- Devices(physical/virtual) attach to busses (platform,PCI,i2c...)
+- Drivers bind to devices and expose interfaces(that can user space program can use to talk)
+- common user-facing surfaces:
+    - character devices under /dev/*(open/read/write/ioctl)
+    - Sysfs attributes under /sys/*(text knobs,RO/RW)
+    - debugfs for debugging , not for production
+
+
 
 
 
