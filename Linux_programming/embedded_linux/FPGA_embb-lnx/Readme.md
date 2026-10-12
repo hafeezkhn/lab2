@@ -11,9 +11,11 @@
 - Interconnect(partial decoding - AXI ,...) routes transactions to peripherals
 - Each peripheral exposes a small `register bank`
 
+```text
                              /[peripheral 0X40000]
 |CPU| - {interconnect[Axi]}  -[peripheral 0X40001]
                              \[peripheral .......]
+```
 
 ### MMIO Fundamentals
 - Memory vs MMIO: similar access, different side-effects
@@ -90,6 +92,12 @@
 - software reads/writes via MMIO(AXI-lite on SOC)
 - In Linux, drivers map MMIO with interface `ioremap()` and use `readl/writel`
     - take that register model and convert it some thing which look like use it as files (dealing with files which have names which has hirearchy of directories/folder is easier in OS)
+>> kernel vs user
+- User Space: apps,limited privileges,uses syscalls
+- kerneel space: OS core and drivers,full access
+- Boundry: files,ioctl,mmap,sysfs,netlink...
+- Design goal:safe and simple interfaces for users
+
 
     
 
