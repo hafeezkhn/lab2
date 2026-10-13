@@ -7,7 +7,6 @@
 </div>
 
 
-
 <div align="center">
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=00599C&center=true&vCenter=true&width=400&lines=TECH+STACK;LANGUAGES+%26+TOOLS;+PROGRAMMING" alt="Typing SVG" />
@@ -56,6 +55,10 @@
 
   <br><br>
 
+---
+
+<div>
+  <!-- Coding Profiles -->
   <a href="https://www.geeksforgeeks.org/profile/hafeez17md" target="_blank">
     <img src="https://img.shields.io/badge/GeeksforGeeks-298D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="GeeksforGeeks Profile" />
   </a>
@@ -67,13 +70,13 @@
   </a>
 </div>
 
-[![Credly Badges](https://img.shields.io/badge/Credly-View_Badges-F96914?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/hafiz-khan.77cb0e7d/badges/credly)
-[![The Linux Foundation](https://img.shields.io/badge/Linux_Foundation-Certificate-003559?style=for-the-badge&logo=linuxfoundation&logoColor=white)](https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/bb34e3c5-b509-4598-b952-7072f1e71a1e-hafiz-khan-fc4f80d4-c584-477b-a498-e2c8f30700f1-certificate.pdf)
+<!-- Certifications -->
+[![Credly Badges](https://img.shields.io/badge/Credly-F96914?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/hafiz-khan.77cb0e7d/badges/credly)
+[![The Linux Foundation](https://img.shields.io/badge/Linux-003559?style=for-the-badge&logo=linuxfoundation&logoColor=white)](https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/bb34e3c5-b509-4598-b952-7072f1e71a1e-hafiz-khan-fc4f80d4-c584-477b-a498-e2c8f30700f1-certificate.pdf)
 
+<!-- AI Tools -->
 [![GitHub Copilot](https://img.shields.io/badge/Copilot-0078D4?style=for-the-badge&logo=githubcopilot&logoColor=white)](./practice2/zmisc/.hidden_folder/github_vscode_agentic.png)
-[![Claude Agentic](https://img.shields.io/badge/Claude_Agentic-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](./practice2/zmisc/.hidden_folder/claude_agentic.png)
-
-
+[![Claude Agentic](https://img.shields.io/badge/Agentic-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](./practice2/zmisc/.hidden_folder/claude_agentic.png)
 
 <div align="center">
   <!-- Changed username to hafeezkhn -->
