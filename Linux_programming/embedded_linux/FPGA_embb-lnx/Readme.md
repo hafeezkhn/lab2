@@ -154,9 +154,85 @@ sysfs:/sys/class/
 
 
 
+### Hardware Inturrupts
+
+- processor runs faster than the peripherals some MHz.
+- polling: CPU busy-waits in loops,good for very fast ops(<1mc), wastes power and cycles
+
+```c
+//the polling problem
+//CPU is stuck in a loop,burning cycles
+while(!(readl(STATUS) & DONE_BIT)){
+    //can't do other work
+    //wastes power
+}
+process_result();
+```
+
+- alternative to polling is Interrupts
+- CPU does other work
+- Event - driven (responsive)
+- good for infrequent/slow events
+- requires handler setup
+>> The Inturrrupt solution:
+  - CPU registers a handler(func) once: register in OS or inturrupt controller which has inturrupt table which tells if particular kind of inturrput occurs then go and call that particular func
+  - Goes off to do other work
+  - Hardware notifies CPU when event occurs
+  - Handler runs, processes event , return
 
 
+  >>NOTE: when to use what: fast operations:polling,slow/unpridictible:inturrupts,Infrequent events:inturrupts
 
+### Types of Inturupt 
 
+- `Level Triggered`: IRQ(signal) is asserted(could be keyboard,or any peripheral)  that causes inturrupt signal to go high until its explicitly cleared by the software(Handler acknolegde) its not gonna clear on its own, software has to acknoledge the fact that it saw the inturrupt this makes it safe ie, you cant miss an inturrupt, so most MMIO peripherals prefer to use Level triggered inturrupts.
 
+```text
+IRQ Signal
+       ______________
+______|              |_______
+      ^              ^
+    Assert          clear
+    (event)         (sw Ack) 
+```
+
+- `Edge Triggered`: in this IRQ(signal basically comes as a pulse) the hardware basically looks for the transition, the pulse goes back down on its own , it does not wait for software acknoledgement,can miss if not handled fast(camera that ditects flash it captures, so lightning not gonna stay till u capture its edge triggered)
+
+```text
+IRQ signal
+     __
+____|  |____________
+    ^
+   Edge pulse
+   (event) 
+```
+
+### ARM Generic Inturrupt Controller
+
+- Route interrupts from many sources to cpu cores
+    1. `Distributor(GICD):` Rec. all INT signals,handles priority/routing
+    2. `CPU Interface(GICC):` One per core,delivers interrupts to cpu
+
+- Interrupt Types:
+    1.  SGI (0-15)  : sw-generated (inter-processor)
+    2.  PPI(16-31)  : Per-CPU private(local timers)
+    3.  SPI(32-1019): shared peripherals
+
+```dts 
+
+gic:inturrupt-controller@8000000{
+    compatible = "arm,cortex-a9-gic"
+    #inturrupt-cells = <3>;
+    inturrupt-controller;
+    reg = <0x8000000 0x1000>,<0x8001000 0x1000>;
+};
+
+smarttimer:smarttimer@70000000{
+compatiblle = "acme,smartttimer-irq-v1";
+reg = <0x70000000  0x1000>;
+interrupts = <GIC_SPI 33 IRQ_TYPE_LEVEL_HIGH>;
+inturrupt-parent =<&gic>;
+};
+
+```
 
