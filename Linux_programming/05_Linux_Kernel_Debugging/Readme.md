@@ -1,37 +1,42 @@
-1: @ User Space
-User Space Purpose
-printf Useful for monitoring
-gdb Source level debugger
-strace strace tool that shows all the system calls issued by a user-space program
-valgrind Memory checker like segmentation fault ERRORS.
-debugfs Debug FS useful for custom debug messages.
-DDT Device Driver Test cases like gpio, uart, i2c etc.
-LTP Linux Test Project useful for Tracing of events in the kernel and also checks
-kernel performance.
-mmap() User directly communicating with hardware for register programming.
-ftrace ftrace is the ability to see what is happening inside the kernel
+# Linux System Debugging Guide
 
-2: @ Kernel Space
-Kernel Space Purpose
-printk & dmesg Useful for monitoring
-Module test cases Useful for particular module test
-/proc and /sys Proc file system useful for overall system information.
-Sys file system useful for device hierarchy.
-Probe Status Useful for to test device working condition.
-KDB KDB is In built Debugger to test whenever kernel goes panic.
-KGDB KGDB is Kernel GDB useful for source level debugging.
-Crash dump Whenever kernel crashes, it create crash dump file for crash dump analysis.
-ftrace Ftrace is the ability to see what is happening inside the kernel
+This document outlines various tools and techniques used for debugging across different levels of a Linux system: User Space, Kernel Space, and the Bootloader.
 
-3: @ u-boot (Boot loader)
-Boot Loader Purpose
-u-boot
-gpio, i2c, sspi commands.
-commands
-Add commands Useful for create custom command for debugging.
-Read/write
-Using md, mm commands read/write device specific registers.
-Device Registers
+## 1. User Space
+
+| Tool / Interface | Purpose |
+| :--- | :--- |
+| **`printf`** | Useful for general monitoring and logging. |
+| **`gdb`** | Source-level debugger. |
+| **`strace`** | Tool that shows all the system calls issued by a user-space program. |
+| **`valgrind`** | Memory checker used to find memory leaks and segmentation fault errors. |
+| **`debugfs`** | Debug filesystem useful for custom debug messages. |
+| **DDT** | Device Driver Test cases (e.g., gpio, uart, i2c, etc.). |
+| **LTP** | Linux Test Project; useful for tracing events in the kernel and checking kernel performance. |
+| **`mmap()`** | Allows the user to communicate directly with hardware for register programming. |
+| **`ftrace`** | Provides the ability to see what is happening inside the kernel from user space. |
+
+## 2. Kernel Space
+
+| Tool / Interface | Purpose |
+| :--- | :--- |
+| **`printk` & `dmesg`** | Useful for kernel-level monitoring and viewing the kernel ring buffer. |
+| **Module test cases** | Useful for testing particular kernel modules. |
+| **`/proc` and `/sys`** | The `proc` file system is useful for overall system information. The `sys` file system is useful for device hierarchy. |
+| **Probe Status** | Useful to test if a device is in a working condition. |
+| **KDB** | Built-in kernel debugger used to test and inspect the system whenever the kernel panics. |
+| **KGDB** | Kernel GDB, useful for source-level debugging of the kernel. |
+| **Crash dump** | Whenever the kernel crashes, it creates a crash dump file for post-mortem analysis. |
+| **`ftrace`** | The built-in tracing utility to see what is happening inside the kernel. |
+
+## 3. U-Boot (Bootloader)
+
+| Command / Feature | Purpose |
+| :--- | :--- |
+| **U-Boot Commands** | General hardware interaction commands like `gpio`, `i2c`, `sspi`. |
+| **Add commands** | Useful to create custom U-Boot commands for specific debugging needs. |
+| **Read/Write Device Registers** | Using `md` (memory display) and `mm` (memory modify) commands to read/write device-specific registers. |
+
 
 ---
 ### оops Messages
