@@ -22,7 +22,7 @@
   <a href="https://github.com/hafeezkhn/lab2/tree/master/c%2B%2B" target="_blank">
     <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
   </a>
-  <a href="https://github.com/hafeezkhn/lab2/tree/master/lab-Ai-mL/0-python_intro" target="_blank">
+  <a href="https://github.com/hafeezkhn/agent_exer/tree/master/lab-Ai-mL/0-python_intro" target="_blank">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
   </a>
   <a href="https://github.com/hafeezkhn/lab2/tree/master/Linux_programming/03_Kernel_Internals" target="_blank">
